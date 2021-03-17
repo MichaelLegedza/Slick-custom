@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body {
+    margin: 0 auto;
+    width: 1600px;
+    height: 100%;
+    background-color: #333;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #fff;
+    font-size: 30px;
+}
+.wrapper {
+    height: 100%;
+    width: 50%;
+}
+
+
+
+/* Слайдер */
+.slick-slider{
+
+}
+/* Слайдер запущен */
+.slick-slider.slick-initialized{
+
+}
+/* Слайдер с точками */
+.slick-slider.slick-dotted{
+
+}
+
+
+
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+}
+
+
+
+
+/* Слайд */
+.slick-slide{
+
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active{
+
+}
+/* Слайд основной */
+.slick-slide.slick-current{
+
+}
+/* Слайд по центру */
+.slick-slide.slick-center{}
+/* Клонированный слайд */
+.slick-slide.slick-cloned{
+
+}
+
+
+
+
+/* Стрелка */
+.slick-arrow{
+
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev{
+
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{
+
+}
+
+
+
+
+/* Точки (булиты) */
+.slick-dots{}
+.slick-dots li{}
+/* Активная точка */
+.slick-dots li.slick-active{}
+/* Элемент точки */
+.slick-dots li button{}
+
+.slider{
+    position: relative;
+    padding: 0px 75px;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 33%;
+    z-index: 10;
+    font-size: 0;
+    width: 45px;
+    height: 45px;
+    outline: 0;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../img/ar-left.svg) 0 0 / 100% no-repeat;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+    background: url(../img/ar-right.svg) 0 0 / 100% no-repeat;
+}
+
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0px 15px;
+}
+.slider .slick-dots button{
+    font-size: 0px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    outline: 0;
+}
+.slider .slick-dots li.slick-active button {
+    width: 45px;
+    background-color: #F53838;
+    border-radius: 10px;
+    transition: .3s linear;
+}
+
+.slider__item {
+    transition: .3s ease-in-out;
+    opacity: 0.4;
+    text-align: center;
+}
+.slider__item.slick-center {
+    opacity: 1;
+}
