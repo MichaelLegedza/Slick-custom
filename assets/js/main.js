@@ -24,8 +24,37 @@ $(document).ready(function() {
         // передвижение при свайпе 
         touchMove: true,
         // скорость перемещения слайдов при помощи стрелок
-        waitForAnimate: true,
+        waitForAnimate: false,
         centerMode: false,
-        variableWidth: true,
+        variableWidth: false,
+        rows: 1,
+        sliderPerRow: 1,
+        vertical: false,
+        verticalSwiping: false,
+        // Привязка слайдера к другому слайдеру.
+        asNavFor: ".slider-big",
+        responsive: [
+            {
+                breakpoin: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoin: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ],
+        mobileFirst: false,
+        appendArrows: $('.content'),
+        appendDots: $('.content')
+    });
+    $('.slider-big').slick({
+        arrows: false,
+        fade: true,
+        // Привязка слайдера к другому слайдеру.
+        asNavFor: ".slider",
     });
 });

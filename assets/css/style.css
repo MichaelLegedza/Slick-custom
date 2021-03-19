@@ -152,3 +152,11 @@ body {
 .slider__item.slick-center {
     opacity: 1;
 }
+
+
+
+
+.slider-big {}
+.slider-big__item {
+    text-align: center;
+}
